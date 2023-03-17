@@ -14,7 +14,9 @@ res.end()
 })
 
 
-app.use(cor())
+app.use(cor({
+    origin:"*"
+}))
  app.use("/",food)
  app.use('/',bolly)
  app.use("/",holly)
